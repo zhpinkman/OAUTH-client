@@ -14,7 +14,6 @@ app.use(express.static('/Users/zhivarsourati/Documents/Network Security/CA3/logi
 function get_parameters(res) {
   var dict = new Object();
   splitted_res = res.split('&')
-  console.log(splitted_res)
   splitted_res.forEach(field => {
     field_values = field.split('=')
     dict[field_values[0]] = field_values[1]
